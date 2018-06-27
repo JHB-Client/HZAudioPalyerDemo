@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0308612D20DCDDCE0086D82B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308612C20DCDDCE0086D82B /* AppDelegate.m */; };
+		0308613020DCDDCE0086D82B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308612F20DCDDCE0086D82B /* ViewController.m */; };
+		0308613320DCDDCE0086D82B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0308613120DCDDCE0086D82B /* Main.storyboard */; };
+		0308613520DCDDD00086D82B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0308613420DCDDD00086D82B /* Assets.xcassets */; };
+		0308613820DCDDD00086D82B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0308613620DCDDD00086D82B /* LaunchScreen.storyboard */; };
+		0308613B20DCDDD00086D82B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308613A20DCDDD00086D82B /* main.m */; };
+		0308614520DCDDD10086D82B /* HZAudioPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308614420DCDDD10086D82B /* HZAudioPlayerDemoTests.m */; };
+		0308615020DCDDD10086D82B /* HZAudioPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308614F20DCDDD10086D82B /* HZAudioPlayerDemoUITests.m */; };
+		0308619D20DD064B0086D82B /* HZVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308619C20DD064B0086D82B /* HZVoiceRecordView.m */; };
+		030861A020DD1B180086D82B /* HZAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0308619F20DD1B180086D82B /* HZAudioRecordTool.m */; };
+		592A429B989DEA3469BCA0CE /* libPods-HZAudioPlayerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDDEBD6222353B1478600E /* libPods-HZAudioPlayerDemoUITests.a */; };
+		66EF13BD9CA9D22F526ABC59 /* libPods-HZAudioPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BAA2C976629200D7015D3F /* libPods-HZAudioPlayerDemo.a */; };
+		E3550AED5313DAAFC24EBBE7 /* libPods-HZAudioPlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ED9CFB2E57EC511CE7CF09 /* libPods-HZAudioPlayerDemoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0308614120DCDDD10086D82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0308612020DCDDCE0086D82B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0308612720DCDDCE0086D82B;
+			remoteInfo = HZAudioPlayerDemo;
+		};
+		0308614C20DCDDD10086D82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0308612020DCDDCE0086D82B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0308612720DCDDCE0086D82B;
+			remoteInfo = HZAudioPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02ED9CFB2E57EC511CE7CF09 /* libPods-HZAudioPlayerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZAudioPlayerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0308612820DCDDCE0086D82B /* HZAudioPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZAudioPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0308612B20DCDDCE0086D82B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0308612C20DCDDCE0086D82B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0308612E20DCDDCE0086D82B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0308612F20DCDDCE0086D82B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0308613220DCDDCE0086D82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0308613420DCDDD00086D82B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0308613720DCDDD00086D82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0308613920DCDDD00086D82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0308613A20DCDDD00086D82B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0308614020DCDDD10086D82B /* HZAudioPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZAudioPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0308614420DCDDD10086D82B /* HZAudioPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAudioPlayerDemoTests.m; sourceTree = "<group>"; };
+		0308614620DCDDD10086D82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0308614B20DCDDD10086D82B /* HZAudioPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZAudioPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0308614F20DCDDD10086D82B /* HZAudioPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAudioPlayerDemoUITests.m; sourceTree = "<group>"; };
+		0308615120DCDDD10086D82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0308619B20DD064A0086D82B /* HZVoiceRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZVoiceRecordView.h; sourceTree = "<group>"; };
+		0308619C20DD064B0086D82B /* HZVoiceRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZVoiceRecordView.m; sourceTree = "<group>"; };
+		0308619E20DD1B180086D82B /* HZAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZAudioRecordTool.h; sourceTree = "<group>"; };
+		0308619F20DD1B180086D82B /* HZAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAudioRecordTool.m; sourceTree = "<group>"; };
+		0E4F002FF15BC5C6CA4E754A /* Pods-HZAudioPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemo/Pods-HZAudioPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		63C4F48CE8DCF1D0F338FFDB /* Pods-HZAudioPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemoUITests/Pods-HZAudioPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78D98C24069C03E268F81EB2 /* Pods-HZAudioPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemo/Pods-HZAudioPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7C21BD9C28A37767350511B6 /* Pods-HZAudioPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemoUITests/Pods-HZAudioPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C7C7FD99785C88C8E71927D /* Pods-HZAudioPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemoTests/Pods-HZAudioPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EBDDEBD6222353B1478600E /* libPods-HZAudioPlayerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZAudioPlayerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BAA2C976629200D7015D3F /* libPods-HZAudioPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZAudioPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DAA6B1491090F29C999D391 /* Pods-HZAudioPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioPlayerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioPlayerDemoTests/Pods-HZAudioPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0308612520DCDDCE0086D82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EF13BD9CA9D22F526ABC59 /* libPods-HZAudioPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308613D20DCDDD10086D82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3550AED5313DAAFC24EBBE7 /* libPods-HZAudioPlayerDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308614820DCDDD10086D82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592A429B989DEA3469BCA0CE /* libPods-HZAudioPlayerDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0308611F20DCDDCE0086D82B = {
+			isa = PBXGroup;
+			children = (
+				0308612A20DCDDCE0086D82B /* HZAudioPlayerDemo */,
+				0308614320DCDDD10086D82B /* HZAudioPlayerDemoTests */,
+				0308614E20DCDDD10086D82B /* HZAudioPlayerDemoUITests */,
+				0308612920DCDDCE0086D82B /* Products */,
+				D3CB6815DDBA9CA7881B7885 /* Pods */,
+				B2C3880F54453B814F9038B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0308612920DCDDCE0086D82B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0308612820DCDDCE0086D82B /* HZAudioPlayerDemo.app */,
+				0308614020DCDDD10086D82B /* HZAudioPlayerDemoTests.xctest */,
+				0308614B20DCDDD10086D82B /* HZAudioPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0308612A20DCDDCE0086D82B /* HZAudioPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0308612B20DCDDCE0086D82B /* AppDelegate.h */,
+				0308612C20DCDDCE0086D82B /* AppDelegate.m */,
+				0308612E20DCDDCE0086D82B /* ViewController.h */,
+				0308612F20DCDDCE0086D82B /* ViewController.m */,
+				0308619B20DD064A0086D82B /* HZVoiceRecordView.h */,
+				0308619C20DD064B0086D82B /* HZVoiceRecordView.m */,
+				0308619E20DD1B180086D82B /* HZAudioRecordTool.h */,
+				0308619F20DD1B180086D82B /* HZAudioRecordTool.m */,
+				0308613120DCDDCE0086D82B /* Main.storyboard */,
+				0308613420DCDDD00086D82B /* Assets.xcassets */,
+				0308613620DCDDD00086D82B /* LaunchScreen.storyboard */,
+				0308613920DCDDD00086D82B /* Info.plist */,
+				0308613A20DCDDD00086D82B /* main.m */,
+			);
+			path = HZAudioPlayerDemo;
+			sourceTree = "<group>";
+		};
+		0308614320DCDDD10086D82B /* HZAudioPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0308614420DCDDD10086D82B /* HZAudioPlayerDemoTests.m */,
+				0308614620DCDDD10086D82B /* Info.plist */,
+			);
+			path = HZAudioPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		0308614E20DCDDD10086D82B /* HZAudioPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0308614F20DCDDD10086D82B /* HZAudioPlayerDemoUITests.m */,
+				0308615120DCDDD10086D82B /* Info.plist */,
+			);
+			path = HZAudioPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		B2C3880F54453B814F9038B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97BAA2C976629200D7015D3F /* libPods-HZAudioPlayerDemo.a */,
+				02ED9CFB2E57EC511CE7CF09 /* libPods-HZAudioPlayerDemoTests.a */,
+				7EBDDEBD6222353B1478600E /* libPods-HZAudioPlayerDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3CB6815DDBA9CA7881B7885 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D98C24069C03E268F81EB2 /* Pods-HZAudioPlayerDemo.debug.xcconfig */,
+				0E4F002FF15BC5C6CA4E754A /* Pods-HZAudioPlayerDemo.release.xcconfig */,
+				7C7C7FD99785C88C8E71927D /* Pods-HZAudioPlayerDemoTests.debug.xcconfig */,
+				9DAA6B1491090F29C999D391 /* Pods-HZAudioPlayerDemoTests.release.xcconfig */,
+				63C4F48CE8DCF1D0F338FFDB /* Pods-HZAudioPlayerDemoUITests.debug.xcconfig */,
+				7C21BD9C28A37767350511B6 /* Pods-HZAudioPlayerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0308612720DCDDCE0086D82B /* HZAudioPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0308615420DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemo" */;
+			buildPhases = (
+				293B5EB379E615653B6DCD98 /* [CP] Check Pods Manifest.lock */,
+				0308612420DCDDCE0086D82B /* Sources */,
+				0308612520DCDDCE0086D82B /* Frameworks */,
+				0308612620DCDDCE0086D82B /* Resources */,
+				825D958C988D2B9B515846E1 /* [CP] Embed Pods Frameworks */,
+				70A1097E4D0D0228922BF206 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZAudioPlayerDemo;
+			productName = HZAudioPlayerDemo;
+			productReference = 0308612820DCDDCE0086D82B /* HZAudioPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0308613F20DCDDD10086D82B /* HZAudioPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0308615720DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemoTests" */;
+			buildPhases = (
+				6DDF51144887936C87AAB9EF /* [CP] Check Pods Manifest.lock */,
+				0308613C20DCDDD10086D82B /* Sources */,
+				0308613D20DCDDD10086D82B /* Frameworks */,
+				0308613E20DCDDD10086D82B /* Resources */,
+				F3C392813039418E2339EE54 /* [CP] Embed Pods Frameworks */,
+				710BF87A7FA003B784147392 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0308614220DCDDD10086D82B /* PBXTargetDependency */,
+			);
+			name = HZAudioPlayerDemoTests;
+			productName = HZAudioPlayerDemoTests;
+			productReference = 0308614020DCDDD10086D82B /* HZAudioPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0308614A20DCDDD10086D82B /* HZAudioPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0308615A20DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemoUITests" */;
+			buildPhases = (
+				DAF9767FF07E03528F94759E /* [CP] Check Pods Manifest.lock */,
+				0308614720DCDDD10086D82B /* Sources */,
+				0308614820DCDDD10086D82B /* Frameworks */,
+				0308614920DCDDD10086D82B /* Resources */,
+				09BD066E8E4028A860DEB7C7 /* [CP] Embed Pods Frameworks */,
+				52B9ECDA64B80C9261C75B6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0308614D20DCDDD10086D82B /* PBXTargetDependency */,
+			);
+			name = HZAudioPlayerDemoUITests;
+			productName = HZAudioPlayerDemoUITests;
+			productReference = 0308614B20DCDDD10086D82B /* HZAudioPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0308612020DCDDCE0086D82B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = huazhuo;
+				TargetAttributes = {
+					0308612720DCDDCE0086D82B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					0308613F20DCDDD10086D82B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 0308612720DCDDCE0086D82B;
+					};
+					0308614A20DCDDD10086D82B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 0308612720DCDDCE0086D82B;
+					};
+				};
+			};
+			buildConfigurationList = 0308612320DCDDCE0086D82B /* Build configuration list for PBXProject "HZAudioPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0308611F20DCDDCE0086D82B;
+			productRefGroup = 0308612920DCDDCE0086D82B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0308612720DCDDCE0086D82B /* HZAudioPlayerDemo */,
+				0308613F20DCDDD10086D82B /* HZAudioPlayerDemoTests */,
+				0308614A20DCDDD10086D82B /* HZAudioPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0308612620DCDDCE0086D82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0308613820DCDDD00086D82B /* LaunchScreen.storyboard in Resources */,
+				0308613520DCDDD00086D82B /* Assets.xcassets in Resources */,
+				0308613320DCDDCE0086D82B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308613E20DCDDD10086D82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308614920DCDDD10086D82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09BD066E8E4028A860DEB7C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemoUITests/Pods-HZAudioPlayerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293B5EB379E615653B6DCD98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZAudioPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B9ECDA64B80C9261C75B6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemoUITests/Pods-HZAudioPlayerDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DDF51144887936C87AAB9EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZAudioPlayerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A1097E4D0D0228922BF206 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemo/Pods-HZAudioPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710BF87A7FA003B784147392 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemoTests/Pods-HZAudioPlayerDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825D958C988D2B9B515846E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemo/Pods-HZAudioPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF9767FF07E03528F94759E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HZAudioPlayerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C392813039418E2339EE54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioPlayerDemoTests/Pods-HZAudioPlayerDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0308612420DCDDCE0086D82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0308619D20DD064B0086D82B /* HZVoiceRecordView.m in Sources */,
+				0308613020DCDDCE0086D82B /* ViewController.m in Sources */,
+				0308613B20DCDDD00086D82B /* main.m in Sources */,
+				030861A020DD1B180086D82B /* HZAudioRecordTool.m in Sources */,
+				0308612D20DCDDCE0086D82B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308613C20DCDDD10086D82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0308614520DCDDD10086D82B /* HZAudioPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0308614720DCDDD10086D82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0308615020DCDDD10086D82B /* HZAudioPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0308614220DCDDD10086D82B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0308612720DCDDCE0086D82B /* HZAudioPlayerDemo */;
+			targetProxy = 0308614120DCDDD10086D82B /* PBXContainerItemProxy */;
+		};
+		0308614D20DCDDD10086D82B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0308612720DCDDCE0086D82B /* HZAudioPlayerDemo */;
+			targetProxy = 0308614C20DCDDD10086D82B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0308613120DCDDCE0086D82B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0308613220DCDDCE0086D82B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0308613620DCDDD00086D82B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0308613720DCDDD00086D82B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0308615220DCDDD10086D82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0308615320DCDDD10086D82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0308615520DCDDD10086D82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D98C24069C03E268F81EB2 /* Pods-HZAudioPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0308615620DCDDD10086D82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4F002FF15BC5C6CA4E754A /* Pods-HZAudioPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0308615820DCDDD10086D82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7C7FD99785C88C8E71927D /* Pods-HZAudioPlayerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZAudioPlayerDemo.app/HZAudioPlayerDemo";
+			};
+			name = Debug;
+		};
+		0308615920DCDDD10086D82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAA6B1491090F29C999D391 /* Pods-HZAudioPlayerDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZAudioPlayerDemo.app/HZAudioPlayerDemo";
+			};
+			name = Release;
+		};
+		0308615B20DCDDD10086D82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C4F48CE8DCF1D0F338FFDB /* Pods-HZAudioPlayerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZAudioPlayerDemo;
+			};
+			name = Debug;
+		};
+		0308615C20DCDDD10086D82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C21BD9C28A37767350511B6 /* Pods-HZAudioPlayerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J36ZY42JY9;
+				INFOPLIST_FILE = HZAudioPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wowjoy.HZAudioPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZAudioPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0308612320DCDDCE0086D82B /* Build configuration list for PBXProject "HZAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0308615220DCDDD10086D82B /* Debug */,
+				0308615320DCDDD10086D82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0308615420DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0308615520DCDDD10086D82B /* Debug */,
+				0308615620DCDDD10086D82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0308615720DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0308615820DCDDD10086D82B /* Debug */,
+				0308615920DCDDD10086D82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0308615A20DCDDD10086D82B /* Build configuration list for PBXNativeTarget "HZAudioPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0308615B20DCDDD10086D82B /* Debug */,
+				0308615C20DCDDD10086D82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0308612020DCDDCE0086D82B /* Project object */;
+}
